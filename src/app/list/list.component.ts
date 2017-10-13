@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoItem } from './todo-item';
+import { TodoApi } from '../services/todo-api.service';
 
 @Component({
   selector: 'app-list',
@@ -7,12 +7,7 @@ import { TodoItem } from './todo-item';
   styleUrls: ['./list.component.scss'],
 })
 export class ListComponent implements OnInit {
-  items: TodoItem[] = [
-    {title: 'Daily report', details: 'write a daily report', highlight: true},
-    {title: 'Weekly report', details: 'write a weekly report', highlight: false},
-  ];
-
-  constructor() {
+  constructor(public todoApi: TodoApi) {
   }
 
   ngOnInit(): void {

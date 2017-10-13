@@ -1,5 +1,5 @@
 <ul class="list-group">
-  <li *ngFor="let item of items" class="list-group-item">
+  <li *ngFor="let item of todoApi.items" class="list-group-item">
     {{item.title}}<span *ngIf="item.highlight" class="text-primary">: {{item.details}}</span>
   </li>
 </ul>
