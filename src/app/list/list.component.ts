@@ -8,8 +8,8 @@ import { TodoItem } from './todo-item';
 })
 export class ListComponent implements OnInit {
   items: TodoItem[] = [
-    {title: 'Daily report', details: 'write a daily report'},
-    {title: 'Weekly report', details: 'write a weekly report'},
+    {title: 'Daily report', details: 'write a daily report', highlight: true},
+    {title: 'Weekly report', details: 'write a weekly report', highlight: false},
   ];
 
   constructor() {
